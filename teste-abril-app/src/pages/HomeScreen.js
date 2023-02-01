@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Button } from 'react-native';
 import {
   TextTitle
 } from '../components/stylesSearch'

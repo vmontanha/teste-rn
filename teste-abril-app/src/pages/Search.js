@@ -8,7 +8,6 @@ import {
 } from 'react-native';
 import api from '../service/Api';
 import {
-  ViewContainer,
   FlatListRepositories,
   IconArrowRightToDetails,
   IconSearch,
@@ -165,7 +164,7 @@ function Search() {
         <FlatListRepositories
           data={responseRepos}
           renderItem={Repository}
-          keyExtractor={(item, index) => index.toString()}
+          keyExtractor={(index) => index.toString()}
           onEndReached={async () => handleSearch('HANDLE_PAGE')}
           onEndReachedThreshold={0.1}
           ListFooterComponent={<ActivityIndicator />}
